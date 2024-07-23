@@ -1,0 +1,17 @@
+{
+    "name": "UnityCommons.Runtime",
+    "rootNamespace": "UnityCommons.Runtime",
+    "references": [
+        "GUID:64c52e74a682df04189ccbd30b6ca5aa",
+        "GUID:6753ff2140978d34db1d9899e49b3857"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
