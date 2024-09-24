@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime.Components
 {
-    [AddComponentMenu(UnityExtensionConstants.Root + "/Scene Quality")]
+    [AddComponentMenu(UnityCommonsConstants.Root + "/Scene Quality")]
     [DisallowMultipleComponent]
     public sealed class SceneQuality : MonoBehaviour
     {

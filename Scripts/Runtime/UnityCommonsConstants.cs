@@ -1,8 +1,8 @@
 ﻿namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime
 {
-    internal static class UnityExtensionConstants
+    internal static class UnityCommonsConstants
     {
-        public const string Root = "Unity Extension";
+        public const string Root = "Unity Commons";
         
         public static class Script
         {

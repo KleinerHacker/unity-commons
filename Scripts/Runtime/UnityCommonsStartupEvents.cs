@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime
 {
-    public static class UnityExtensionStartupEvents
+    public static class UnityCommonsStartupEvents
     {
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
         public static void Initialize()
