@@ -1,14 +1,15 @@
 {
-    "name": "UnityCommons.Runtime",
-    "rootNamespace": "UnityCommons.Runtime",
+    "name": "UnityCommons.Editor",
+    "rootNamespace": "UnityCommons.Editor",
     "references": [
+        "GUID:3d5224c516c856c4bb9a5993e6431b13",
+        "GUID:5d0595cabca3f65418ec01a472735d07",
         "GUID:64c52e74a682df04189ccbd30b6ca5aa",
-        "GUID:6753ff2140978d34db1d9899e49b3857",
-        "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:03e750fc17f6cff499337d89b1e613c8",
-        "GUID:86c5ae22b787083498226e9faa99731d"
+        "GUID:478a2357cc57436488a56e564b08d223"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
