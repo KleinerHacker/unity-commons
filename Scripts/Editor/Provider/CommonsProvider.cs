@@ -23,17 +23,17 @@ namespace UnityCommons.Editor.Projects.unity_commons.Scripts.Editor.Provider
 
         public override void OnGUI(string searchContext)
         {
-            var isSingletonLogging = PlayerSettingsEx.IsScriptingSymbolDefined(UnityExtensionEditorConstants.Building.Symbol.SingletonLogging);
+            var isSingletonLogging = PlayerSettingsEx.IsScriptingSymbolDefined(UnityCommonsEditorConstants.Building.Symbol.SingletonLogging);
             var newSingletonLogging = GUILayout.Toggle(isSingletonLogging, "Activate Singleton Logging");
             if (isSingletonLogging != newSingletonLogging)
             {
                 if (newSingletonLogging)
                 {
-                    PlayerSettingsEx.AddScriptingSymbol(UnityExtensionEditorConstants.Building.Symbol.SingletonLogging);
+                    PlayerSettingsEx.AddScriptingSymbol(UnityCommonsEditorConstants.Building.Symbol.SingletonLogging);
                 }
                 else
                 {
-                    PlayerSettingsEx.RemoveScriptingSymbol(UnityExtensionEditorConstants.Building.Symbol.SingletonLogging);
+                    PlayerSettingsEx.RemoveScriptingSymbol(UnityCommonsEditorConstants.Building.Symbol.SingletonLogging);
                 }
             }
         }

@@ -1,6 +1,6 @@
 namespace UnityCommons.Editor.Projects.unity_commons.Scripts.Editor
 {
-    internal static class UnityExtensionEditorConstants
+    internal static class UnityCommonsEditorConstants
     {
         public static class Building
         {
