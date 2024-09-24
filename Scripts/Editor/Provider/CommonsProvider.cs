@@ -17,7 +17,7 @@ namespace UnityCommons.Editor.Projects.unity_commons.Scripts.Editor.Provider
 
         #endregion
 
-        public CommonsProvider() : base("Project/Extensions/Commons", SettingsScope.Project, new List<string>() { "Commons", "Singleton" })
+        public CommonsProvider() : base("Project/Player/Commons", SettingsScope.Project, new List<string>() { "Commons", "Singleton" })
         {
         }
 

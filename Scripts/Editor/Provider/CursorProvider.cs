@@ -23,7 +23,7 @@ namespace UnityCommons.Editor.Projects.unity_commons.Scripts.Editor.Provider
 
         private CursorList _cursorList;
 
-        public CursorProvider() : base("Project/Extensions/Cursors", SettingsScope.Project, new[] { "Tooling", "Cursor", "Mouse" })
+        public CursorProvider() : base("Project/Player/Cursors", SettingsScope.Project, new[] { "Tooling", "Cursor", "Mouse" })
         {
         }
 
