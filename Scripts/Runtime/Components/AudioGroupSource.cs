@@ -52,6 +52,10 @@ namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime.Components
             audioSource.Play(delay);
         }
 
+        public void PlayOneShot(AudioClipGroup clipGroup) => audioSource.PlayOneShot(clipGroup.Clips.GetRandom());
+        
+        public void PlayOneShot(AudioClipGroup clipGroup, float volumeScale) => audioSource.PlayOneShot(clipGroup.Clips.GetRandom(), volumeScale);
+
         public void Stop() => audioSource.Stop();
 
         public void Pause() => audioSource.Pause();
