@@ -6,18 +6,17 @@ using UnityEngine;
 namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime.Components.UDebug
 {
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
-    [Singleton(Scope = SingletonScope.Application, Instance = SingletonInstance.RequiresNewInstance, CreationTime = SingletonCreationTime.Loading, ObjectName = "Debug Framerate")]
+    [Singleton(ObjectName = "Debug Framerate")]
     public sealed class DebugFramerate : SingletonBehavior<DebugFramerate>
     {
-        [SingletonCondition]
-        public static bool IsSingletonAlive() => DebugSettings.Singleton.ShowFramerate;
-        
         private GUIStyle _style;
         private float _deltaTime;
         private byte _counter;
         private string _text = "";
 
-        protected override void DoAwake()
+        #region Builtin Methods
+
+        private void Awake()
         {
             _style = new GUIStyle
             {
@@ -51,6 +50,13 @@ namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime.Components
         private void OnGUI()
         {
             GUI.Label(Screen.safeArea, _text, _style);
+        }
+
+        #endregion
+
+        protected override void OnInitializeSingleton()
+        {
+            enabled = DebugSettings.Singleton.ShowFramerate;
         }
     }
 #endif

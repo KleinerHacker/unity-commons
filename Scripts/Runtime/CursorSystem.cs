@@ -8,19 +8,19 @@ namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime
     {
         public static bool IsVisible
         {
-            get => CursorController.Singleton.IsVisible;
-            set => CursorController.Singleton.IsVisible = value;
+            get => CursorController.Instance.IsVisible;
+            set => CursorController.Instance.IsVisible = value;
         }
         
         public static CursorLockMode LockMode
         {
-            get => CursorController.Singleton.LockMode;
-            set => CursorController.Singleton.LockMode = value;
+            get => CursorController.Instance.LockMode;
+            set => CursorController.Instance.LockMode = value;
         }
 
-        public static void ChangeCursor(string key) => CursorController.Singleton.ChangeCursor(key);
+        public static void ChangeCursor(string key) => CursorController.Instance.ChangeCursor(key);
 
-        public static void ResetCursor() => CursorController.Singleton.ResetCursor();
+        public static void ResetCursor() => CursorController.Instance.ResetCursor();
     }
 }
 #endif

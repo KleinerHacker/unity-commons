@@ -8,8 +8,7 @@ using UnityEngine;
 namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime.Components
 {
 #if PCSOFT_CURSOR
-    [Singleton(Scope = SingletonScope.Application, Instance = SingletonInstance.RequiresNewInstance,
-        CreationTime = SingletonCreationTime.Loading, ObjectName = "Cursor System")]
+    [Singleton(ObjectName = "Cursor System")]
     public sealed class CursorController : SingletonBehavior<CursorController>
     {
         #region Properties
@@ -47,7 +46,7 @@ namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime.Components
 
         #region Builtin Methods
 
-        protected override void DoAwake()
+        private void Awake()
         {
             _settings = CursorSettings.Singleton;
         }
