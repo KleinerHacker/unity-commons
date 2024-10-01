@@ -6,7 +6,7 @@ namespace UnityCommons.Editor.Projects.unity_commons.Scripts.Editor
         {
             public static class Symbol
             {
-                public const string SingletonLogging = "SINGLETON_LOGGING";
+                public const string SingletonLogging = "PCSOFT_SINGLETON_LOGGING";
             }
         }
     }

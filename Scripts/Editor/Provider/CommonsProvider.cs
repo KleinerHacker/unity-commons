@@ -24,7 +24,7 @@ namespace UnityCommons.Editor.Projects.unity_commons.Scripts.Editor.Provider
         public override void OnGUI(string searchContext)
         {
             var isSingletonLogging = PlayerSettingsEx.IsScriptingSymbolDefined(UnityCommonsEditorConstants.Building.Symbol.SingletonLogging);
-            var newSingletonLogging = GUILayout.Toggle(isSingletonLogging, "Activate Singleton Logging");
+            var newSingletonLogging = GUILayout.Toggle(isSingletonLogging, "Verbose Singleton Logging");
             if (isSingletonLogging != newSingletonLogging)
             {
                 if (newSingletonLogging)
