@@ -1,0 +1,20 @@
+{
+    "name": "UnityCommons.Runtime",
+    "rootNamespace": "UnityCommons.Runtime",
+    "references": [
+        "GUID:64c52e74a682df04189ccbd30b6ca5aa",
+        "GUID:6753ff2140978d34db1d9899e49b3857",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:03e750fc17f6cff499337d89b1e613c8",
+        "GUID:86c5ae22b787083498226e9faa99731d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
