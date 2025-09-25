@@ -11,12 +11,12 @@ namespace UnityCommons.Runtime.Projects.unity_commons.Scripts.Runtime
         {
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
             Debug.Log("Load debug...");
-            AssetResourcesLoader.LoadFromResources<DebugSettings>("");
+            AssetResourcesManager.FromResources<DebugSettings>("").Load();
 #endif
 
 #if PCSOFT_CURSOR
             Debug.Log("Load cursor system...");
-            AssetResourcesLoader.LoadFromResources<CursorSettings>("");
+            AssetResourcesManager.FromResources<CursorSettings>("").Load();
 #endif
         }
 
